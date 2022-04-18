@@ -1,5 +1,9 @@
-#import <React/RCTBridgeModule.h>
+#ifndef NoteDetectr_h
+#define NoteDetectr_h
 
-@interface NoteDetectr : NSObject <RCTBridgeModule>
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
+
+@interface NoteDetectr : RCTEventEmitter <RCTBridgeModule>
 
 @end

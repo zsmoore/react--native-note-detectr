@@ -1,0 +1,6 @@
+target 'NoteDetectr' do
+  permissions_path = '../node_modeuls/react-native-permissions/ios'
+
+  pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone"
+
+end

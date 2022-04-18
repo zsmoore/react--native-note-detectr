@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* NoteDetectr.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* NoteDetectr.m */; };
-
+		AF278F12280B37EA003BF7D5 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF278F10280B37EA003BF7D5 /* Buffer.cpp */; };
+		AF278F15280B3846003BF7D5 /* AudioCorrelator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF278F13280B3846003BF7D5 /* AudioCorrelator.cpp */; };
+		AF278F18280B38D3003BF7D5 /* AudioStreamManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF278F16280B38D3003BF7D5 /* AudioStreamManager.cpp */; };
+		AF278F1E280B3DD9003BF7D5 /* AudioStreamManagerObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF278F1D280B3DD9003BF7D5 /* AudioStreamManagerObjC.mm */; };
+		E4ACCD429B1DD09B1D862D8F /* libPods-NoteDetectr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 995198744E4C82B928757302 /* libPods-NoteDetectr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +28,19 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libNoteDetectr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNoteDetectr.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		6A4152D4259FEA021C274242 /* Pods-NoteDetectr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDetectr.release.xcconfig"; path = "Target Support Files/Pods-NoteDetectr/Pods-NoteDetectr.release.xcconfig"; sourceTree = "<group>"; };
+		995198744E4C82B928757302 /* libPods-NoteDetectr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoteDetectr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF278F10280B37EA003BF7D5 /* Buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
+		AF278F11280B37EA003BF7D5 /* Buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
+		AF278F13280B3846003BF7D5 /* AudioCorrelator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioCorrelator.cpp; sourceTree = "<group>"; };
+		AF278F14280B3846003BF7D5 /* AudioCorrelator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioCorrelator.hpp; sourceTree = "<group>"; };
+		AF278F16280B38D3003BF7D5 /* AudioStreamManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStreamManager.cpp; sourceTree = "<group>"; };
+		AF278F17280B38D3003BF7D5 /* AudioStreamManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioStreamManager.hpp; sourceTree = "<group>"; };
+		AF278F1C280B3DBF003BF7D5 /* AudioStreamManagerObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioStreamManagerObjC.h; sourceTree = "<group>"; };
+		AF278F1D280B3DD9003BF7D5 /* AudioStreamManagerObjC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioStreamManagerObjC.mm; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* NoteDetectr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetectr.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* NoteDetectr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetectr.m; sourceTree = "<group>"; };
-
+		D391E8BB4488DD7A08D6E07D /* Pods-NoteDetectr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteDetectr.debug.xcconfig"; path = "Target Support Files/Pods-NoteDetectr/Pods-NoteDetectr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4ACCD429B1DD09B1D862D8F /* libPods-NoteDetectr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,14 +63,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1E902E8A7532D76A711F153C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D391E8BB4488DD7A08D6E07D /* Pods-NoteDetectr.debug.xcconfig */,
+				6A4152D4259FEA021C274242 /* Pods-NoteDetectr.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3BC6C14D605AAEAF47CAE467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				995198744E4C82B928757302 /* libPods-NoteDetectr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
+				AF278F1D280B3DD9003BF7D5 /* AudioStreamManagerObjC.mm */,
+				AF278F1C280B3DBF003BF7D5 /* AudioStreamManagerObjC.h */,
+				AF278F16280B38D3003BF7D5 /* AudioStreamManager.cpp */,
+				AF278F17280B38D3003BF7D5 /* AudioStreamManager.hpp */,
+				AF278F13280B3846003BF7D5 /* AudioCorrelator.cpp */,
+				AF278F14280B3846003BF7D5 /* AudioCorrelator.hpp */,
+				AF278F10280B37EA003BF7D5 /* Buffer.cpp */,
+				AF278F11280B37EA003BF7D5 /* Buffer.hpp */,
 				B3E7B5881CC2AC0600A0062D /* NoteDetectr.h */,
 				B3E7B5891CC2AC0600A0062D /* NoteDetectr.m */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				1E902E8A7532D76A711F153C /* Pods */,
+				3BC6C14D605AAEAF47CAE467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "NoteDetectr" */;
 			buildPhases = (
+				BA6FAF4C768129EE79F46E9A /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -114,14 +153,40 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA6FAF4C768129EE79F46E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteDetectr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* NoteDetectr.m in Sources */,
-
+				AF278F18280B38D3003BF7D5 /* AudioStreamManager.cpp in Sources */,
+				AF278F12280B37EA003BF7D5 /* Buffer.cpp in Sources */,
+				AF278F15280B3846003BF7D5 /* AudioCorrelator.cpp in Sources */,
+				AF278F1E280B3DD9003BF7D5 /* AudioStreamManagerObjC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +221,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -206,6 +272,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -223,6 +290,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D391E8BB4488DD7A08D6E07D /* Pods-NoteDetectr.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -234,12 +302,12 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NoteDetectr;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4152D4259FEA021C274242 /* Pods-NoteDetectr.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -251,7 +319,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NoteDetectr;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};
